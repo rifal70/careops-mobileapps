@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#073674</color>
+    <color name="colorPrimaryDark">#3F51B5</color>
+    <color name="colorAccent">#F89592</color>
+    <color name="pale_magenta_90">#e5de63b3</color>
+    <color name="black_54">#363636</color>
+    <color name="black_87">#dd000000</color>
+    <color name="warm_grey">#828282</color>
+    <color name="red_alert">#f44336</color>
+    <color name="warnabaruwoi">#0db93b</color>
+    <color name="warnamerah">#073674</color>
+    <color name="tabindicator">#FFFFFF</color>
+    <color name="colorBiru">#073674</color>
+
+</resources>

@@ -1,0 +1,60 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/detail_toolbar_kosong"
+        android:layout_width="match_parent"
+        app:layout_collapseMode="pin"
+        app:title="Digilearn"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="?android:attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/btn_browse_wishlist"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/phone_group" />
+
+        <EditText
+            android:id="@+id/editTextPhoneGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:layout_below="@id/detail_toolbar_kosong"
+            android:hint="input admin phone number"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/btn_browse_wishlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPhoneGroup"
+            android:layout_alignParentStart="true"
+            android:layout_margin="20dp"
+            android:background="@color/colorAccent"
+            android:text="VALIDATE GROUP"
+            android:textColor="@android:color/background_light" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btn_browse_wishlist"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>

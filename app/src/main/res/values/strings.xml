@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Careops</string>
+    <string name="featured">Featured Careops</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="base_url">http://54.251.83.205/api_careops/</string>
+    <string name="base_url_asset">http://54.251.83.205/member_careops/assets.careops/</string>
+
+    <string name="base_url_asset_profile">http://54.251.83.205/member_careops/assets.careops/profile/</string>
+    <string name="base_url_asset_banner">http://54.251.83.205/member_careops/assets.careops/banner/</string>
+
+    <string name="base_url_asset_quiz">http://54.251.83.205/careops/admin-master/assets.admin_master/</string>
+
+    <string name="tryout">Announcement</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_field_kosong">Please fill all the fields</string>
+    <string name="title_activity_quiz_adapter">QuizAdapter</string>
+    <string name="signup"><u>Sign Up</u></string>
+    <string name="logout"><font color = '#FF0000'><u>Logout</u></font></string>
+</resources>
+

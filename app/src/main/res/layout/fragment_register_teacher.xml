@@ -1,0 +1,180 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screen_regis"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    tools:context="com.digimaster.digicourse.digicyber.com.digimaster.digicourse.digilearn.Fragment.RegisterFragment">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_login">
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="275dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/etTtl"
+            android:layout_below="@+id/etTtl"
+            android:background="@drawable/rounded_etext"
+            android:drawableRight="@drawable/ic_call_black_18dp"
+            android:ems="10"
+            android:hint="phone"
+            android:inputType="phone"
+            android:maxLength="15"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="46dp" />
+
+        <Button
+            android:id="@+id/btnRegisterTeach"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="58dp"
+            android:background="@color/colorAccent"
+            android:onClick="register"
+            android:text="REGISTER"
+            android:textColor="@color/cardview_light_background"
+            tools:ignore="OnClick"
+            tools:layout_editor_absoluteX="116dp"
+            tools:layout_editor_absoluteY="202dp" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="275dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/etPhone"
+            android:layout_below="@+id/etPhone"
+            android:background="@drawable/rounded_etext"
+            android:drawableRight="@drawable/ic_home_black_18dp"
+            android:ems="10"
+            android:hint="address"
+            android:inputType="textMultiLine"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="124dp" />
+
+        <EditText
+            android:id="@+id/etTtl"
+            android:layout_width="275dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/etPhone"
+            android:layout_below="@+id/etPass"
+            android:background="@drawable/rounded_etext"
+            android:clickable="true"
+            android:drawableRight="@drawable/ic_date_range_black_18dp"
+            android:focusable="false"
+            android:hint="birthday"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="275dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/etFullName"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_etext"
+            android:drawableRight="@drawable/ic_mail_outline_black_18dp"
+            android:ems="10"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="46dp" />
+
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="275dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            android:background="@drawable/rounded_etext"
+            android:drawableEnd="@drawable/ic_person_black_18dp"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="fullname"
+            android:inputType="textPersonName"
+            android:maxLength="50"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="46dp" />
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="275dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/etTtl"
+            android:layout_below="@+id/etPhone"
+            android:background="@drawable/rounded_etext"
+            android:drawableEnd="@drawable/ic_lock_outline_black_18dp"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="46dp" />
+
+        <EditText
+            android:id="@+id/etRate"
+            android:layout_width="275dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/etAddress"
+            android:layout_below="@+id/etAddress"
+            android:background="@drawable/rounded_etext"
+            android:drawableRight="@drawable/ic_monetization_on_black_18dp"
+            android:ems="10"
+            android:hint="rate/hour"
+            android:inputType="number"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="124dp" />
+
+        <EditText
+            android:id="@+id/etPengalaman"
+            android:layout_width="275dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/etRate"
+            android:layout_below="@+id/etRate"
+            android:background="@drawable/rounded_etext"
+            android:drawableRight="@drawable/ic_work_black_18dp"
+            android:ems="10"
+            android:hint="pengalaman"
+            android:inputType="textMultiLine"
+            android:maxLength="100"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            tools:layout_editor_absoluteX="45dp"
+            tools:layout_editor_absoluteY="124dp" />
+
+        <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="163dp"
+            android:gravity="center"
+            custom:activeBgColor="@android:color/holo_blue_dark"
+            custom:activeTextColor="@android:color/white"
+            custom:inactiveBgColor="@android:color/white"
+            custom:inactiveTextColor="@android:color/black"
+            custom:separatorColor="@color/gray_very_light"
+            custom:textToggleLeft="MALE"
+            custom:textToggleRight="FEMALE"
+            custom:toggleWidth="135dp" />
+    </RelativeLayout>
+
+</FrameLayout>

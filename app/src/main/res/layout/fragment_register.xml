@@ -1,0 +1,264 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animationCache="false"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:scrollingCache="false"
+    android:smoothScrollbar="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <FrameLayout
+        android:id="@+id/screen_regis"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context="com.digimaster.digicourse.digicyber.com.digimaster.digicourse.digilearn.Fragment.RegisterFragment">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/register" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Build the best people."
+                android:textColor="@color/colorBiru"
+                android:textSize="25sp"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold" />
+
+            <Button
+                android:fontFamily="@font/montserrat"
+                android:id="@+id/btnRegisRegis"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/rounded_button_color"
+                android:layout_below="@id/etPassword"
+                android:onClick="register"
+                android:text="Sign UP"
+                android:textColor="@color/cardview_light_background"
+                tools:ignore="OnClick"
+                tools:layout_editor_absoluteX="116dp"
+                tools:layout_editor_absoluteY="202dp" />
+
+
+            <LinearLayout
+                android:id="@+id/linearPhone"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/etAlias"
+                android:orientation="horizontal">
+
+                <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1.5"
+                    app:ccp_textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    app:ccp_defaultNameCode="ID"/>
+
+                <EditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/rounded_etext"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:maxLength="50"
+              />
+
+            </LinearLayout>
+
+            <TextView
+                android:fontFamily="@font/poppinslight"
+                android:id="@+id/tvKeteranganPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearPhone"
+                android:layout_centerHorizontal="true"
+                android:textSize="10sp"
+                android:text="*this number will be your username ID" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="275dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tvKeteranganPhone"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_etext"
+                android:ems="10"
+                android:hint="e-mail"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                tools:layout_editor_absoluteX="45dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="275dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/etEmail"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_etext"
+                android:ems="10"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:maxLength="50"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                tools:layout_editor_absoluteX="45dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <LinearLayout
+                android:id="@+id/linearName"
+                android:layout_width="275dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="45dp"
+                tools:layout_editor_absoluteY="46dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/textView6">
+
+                <EditText
+                    android:id="@+id/etFname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_etext"
+                    android:drawablePadding="5dp"
+                    android:ems="10"
+                    android:hint="first name"
+                    android:inputType="textPersonName"
+                    android:maxLength="50"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    />
+
+                <EditText
+                    android:id="@+id/etLname"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_etext"
+                    android:drawablePadding="5dp"
+                    android:ems="10"
+                    android:hint="last name"
+                    android:inputType="textPersonName"
+                    android:maxLength="50"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    tools:layout_editor_absoluteX="45dp"
+                    tools:layout_editor_absoluteY="46dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etAlias"
+                android:layout_width="275dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/linearName"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_etext"
+                android:ems="10"
+                android:hint="nickname"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                tools:layout_editor_absoluteX="45dp"
+                tools:layout_editor_absoluteY="46dp" />
+
+            <TextView
+                android:id="@+id/a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnRegisRegis"
+                android:layout_marginTop="20dp"
+                android:padding="3dp"
+                android:text="By registering, I agree to CareOps's"
+                android:textAlignment="center"
+                android:textColor="@color/colorBiru"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_below="@+id/a"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Term of Service"
+                    android:textAlignment="center"
+                    android:textColor="#FF5722"
+                    android:textSize="12sp"
+                    android:padding="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="and"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBiru"
+                    android:textSize="12sp" />
+                <TextView
+                    android:padding="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy."
+                    android:textAlignment="center"
+                    android:textColor="#FF5722"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+                android:id="@+id/toogleGender_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="141dp"
+                android:gravity="center"
+                android:visibility="invisible"
+                app:activeBgColor="@android:color/holo_blue_dark"
+                app:activeTextColor="@android:color/white"
+                app:inactiveBgColor="@android:color/white"
+                app:inactiveTextColor="@android:color/black"
+                app:separatorColor="@color/gray_very_light"
+                app:textToggleLeft="MALE"
+                app:textToggleRight="FEMALE"
+                app:toggleWidth="135dp" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</androidx.core.widget.NestedScrollView>

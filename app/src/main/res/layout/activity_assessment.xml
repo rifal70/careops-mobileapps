@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlAssAct"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.digimaster.digicourse.digicyber.Activity.AssessmentActivity">
+
+<!--    <android.support.v7.widget.Toolbar-->
+<!--        android:id="@+id/detail_toolbar_kosong"-->
+<!--        android:layout_width="match_parent"-->
+<!--        app:layout_collapseMode="pin"-->
+<!--        app:title="Careops"-->
+<!--        android:layout_height="?android:attr/actionBarSize"-->
+<!--        android:background="@color/white"-->
+<!--        app:popupTheme="@style/AppTheme.PopupOverlay"-->
+<!--        app:titleTextColor="@color/white" />-->
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_backs"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentTop="true"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAssess"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/detail_toolbar_kosong"
+        />
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_featured"
+            android:icon="@drawable/ic_whatshot_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_announce"
+            android:icon="@drawable/ic_home_black_18dp"
+            android:title="Announcement" />
+        <item
+            android:id="@+id/nav_findteacher"
+            android:icon="@drawable/ic_people_outline_black_24dp"
+            android:title="People" />
+        <item
+            android:id="@+id/nav_group"
+            android:icon="@drawable/user_icon"
+            android:title="Group"
+            android:visible="true"
+            />
+        <item
+            android:id="@+id/nav_mycourse"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Task" />
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/ic_date_range_black_18dp"
+            android:title="Event" />
+        <item
+            android:id="@+id/nav_library"
+            android:icon="@drawable/ic_book"
+            android:title="Library" />
+
+        <item
+            android:id="@+id/nav_faq"
+            android:icon="@drawable/ic_amount_detail"
+            android:title="FAQ" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/act_signin"
+                android:title="Login" />
+            <item
+                android:id="@+id/act_signout"
+                android:title="Logout"
+                android:visible="false"
+                />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rvFindGuru"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif_load_fragment_find_teacher"
+            android:layout_width="72dp"
+            android:layout_height="68dp"
+            android:layout_below="@+id/textView21"
+            android:layout_centerHorizontal="true"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:src="@drawable/loading"
+            android:visibility="gone" />
+
+        <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+            android:id="@+id/group_dummy"
+            android:layout_width="365dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="48dp"
+            app:tbgChildSpacing="auto"
+            app:tbgChildSpacingForLastRow="align"
+            app:tbgFlow="true"
+            app:tbgRowSpacing="8dp">
+
+            <!--...-->
+            <com.nex3z.togglebuttongroup.button.LabelToggle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CVC" />
+
+            <com.nex3z.togglebuttongroup.button.LabelToggle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PIM" />
+
+            <com.nex3z.togglebuttongroup.button.LabelToggle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KOKAS" />
+
+            <com.nex3z.togglebuttongroup.button.LabelToggle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CERVINO" />
+
+            <com.nex3z.togglebuttongroup.button.LabelToggle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KEMVIL" />
+
+            <com.nex3z.togglebuttongroup.button.LabelToggle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GI" />
+
+            <com.nex3z.togglebuttongroup.button.LabelToggle
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PI" />
+
+        </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/group_dummy"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="18dp"
+            android:text="SELECT PROJECT"
+            android:textColor="@color/black_54"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTeacher"
+            android:layout_width="match_parent"
+            android:layout_height="374dp"
+            android:layout_below="@id/group_dummy"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="25dp" />
+
+    </RelativeLayout>
+</FrameLayout>

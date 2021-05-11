@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/disable"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="Setting"
+        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+        android:layout_marginStart="55dp"
+            android:layout_marginTop="70dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/notifsetting_option2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/notificationsetting">
+
+            </Button>
+            <Button
+                android:id="@+id/notifsetting_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Notification settings"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25px"
+                android:textSize="14sp"
+                android:background="@color/zxing_transparent"
+                >
+
+            </Button>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="55dp"
+
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/changepass_option2"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+
+                android:background="@drawable/changepass">
+
+            </Button>
+            <Button
+                android:id="@+id/changepass_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Change Passwords"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25px"
+                android:textSize="14sp"
+                android:background="@color/zxing_transparent"
+                >
+
+            </Button>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/changephone_option2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/changephone">
+
+            </Button>
+            <Button
+                android:id="@+id/changephone_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Change Phone Number"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25px"
+                android:textSize="14sp"
+                android:background="@color/zxing_transparent"
+                >
+
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/deleteaccount_option2"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/deleteacount">
+
+            </Button>
+            <Button
+                android:id="@+id/deleteaccount_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Delete Account"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:layout_marginLeft="35px"
+                android:textColor="@color/red"
+                android:textSize="14sp"
+                android:background="@color/zxing_transparent"
+                >
+
+            </Button>
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

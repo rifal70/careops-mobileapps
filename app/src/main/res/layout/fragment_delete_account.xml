@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="300dp"
+    android:layout_height="320dp"
+ android:layout_gravity="center"
+
+
+android:background="@drawable/roundeddialog"
+    android:orientation="vertical"
+    android:layout_centerVertical="true">
+<LinearLayout
+    android:layout_width="280dp"
+    android:layout_height="280dp"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="10dp">
+    <ImageView
+        android:layout_marginTop="10dp"
+    android:layout_width="220dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/deletedialog"/>
+
+
+<LinearLayout
+    android:layout_width="220dp"
+    android:layout_height="31dp"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="10dp">
+    <Button
+        android:id="@+id/yesdelete"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_button_color"
+android:text="Yes"
+
+        android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/nodelete"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@drawable/rounded_button_color"
+        android:text="No"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"/>
+
+
+</LinearLayout>
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

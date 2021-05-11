@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: me.majiajie:pager-bottom-tab-strip:2.3.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4c2523098a99df40a0ec031e3d5d5be2/jetified-pager-bottom-tab-strip-2.3.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4c2523098a99df40a0ec031e3d5d5be2/jetified-pager-bottom-tab-strip-2.3.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.majiajie/pager-bottom-tab-strip/2.3.0/dfc1d03e1cad4b7e536411b35213e74dfdfb2076/pager-bottom-tab-strip-2.3.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.majiajie/pager-bottom-tab-strip/2.3.0/e439be7c4ae39e643eeb4d271269c74143a6f2fe/pager-bottom-tab-strip-2.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

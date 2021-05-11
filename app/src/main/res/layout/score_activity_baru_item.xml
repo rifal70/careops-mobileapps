@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view_outer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:elevation="60dp"
+    app:cardCornerRadius="20dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_marginRight="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivTaskLibraryscorebaru"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp" />
+
+
+            <LinearLayout
+
+                android:layout_width="200sp"
+
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/item_titlescorebaru"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="30sp"
+                    android:layout_marginTop="2dp"
+                    android:autoSizeTextType="uniform"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-medium"
+                    android:lineSpacingExtra="5dp"
+                    android:maxLines="2"
+                    android:text="Task"
+                    android:textColor="@color/colorBiru"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/item_writerscorebaru"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_weight=".60"
+                        android:autoSizeTextType="uniform"
+                        android:ellipsize="end"
+                        android:fontFamily="sans-serif-medium"
+                        android:lineSpacingExtra="8dp"
+                        android:maxLines="1"
+                        android:text="Created by"
+                        android:textColor="@color/black_54"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="13sp"
+                        android:layout_marginTop="1dp"
+                        android:layout_weight=".40"
+                        android:ellipsize="end"
+                        android:fontFamily="sans-serif-medium"
+                        android:lineSpacingExtra="8dp"
+                        android:maxLines="1"
+                        android:text="Mr.Victor"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="5 Sessions | 10 Activities"
+                    android:textSize="10sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3sp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20sp"
+                            android:layout_marginTop="3sp"
+                            android:layout_marginBottom="3sp"
+                            android:layout_gravity="center_vertical"
+
+                            android:orientation="horizontal"
+
+                            >
+
+                            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                                android:id="@+id/progress_bar1scorebaru"
+                                android:layout_width="0dp"
+                                android:layout_height="12dp"
+                                android:layout_weight=".70"
+                                app:rcBackgroundColor="#ebeff5"
+                                app:rcMax="100"
+                                app:rcProgress="30"
+                                app:rcProgressColor="@color/colorPrimary"
+                                app:rcRadius="5dp" />
+
+                            <TextView
+                                android:id="@+id/textViewpersenanscorebaru"
+                                android:layout_width="0dp"
+                                android:layout_height="12dp"
+                                android:layout_marginRight="3sp"
+                                android:layout_weight=".20"
+                                android:text="50%"
+                                android:textSize="10dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llItemLayout3"
+                android:layout_alignEnd="@+id/llItemLayout3"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10sp"
+                android:layout_marginRight="1sp"
+
+
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btnBacascorebaru"
+                    android:layout_width="90sp"
+                    android:layout_gravity="center"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/rounded_button_color_start"
+                    android:text="START"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="8sp" />
+
+                <Button
+                    android:id="@+id/btnAssignscorebaru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="3sp"
+                    android:background="@drawable/rounded_button_color"
+                    android:text="FEEDBACK"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>

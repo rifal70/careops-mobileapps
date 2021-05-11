@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rv_root_mycourse_adapter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@null">
+
+    <RelativeLayout
+        android:id="@+id/rvBab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_cardview_color"
+        >
+
+        <TextView
+            android:id="@+id/tv_bab_my_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_cardview_color"
+            android:text="Bab"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+    <!--android:id="@+id/expandable_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_below="@id/tv_bab_my_course"-->
+    <!--app:el_duration="700"-->
+    <!--app:el_expanded="true"-->
+    <!--app:el_parallax="0.5">-->
+
+
+    <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+</RelativeLayout>

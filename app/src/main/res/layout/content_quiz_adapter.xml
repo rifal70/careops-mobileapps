@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animationCache="false"
+    android:fitsSystemWindows="true"
+    android:background="#FAFAFA"
+    android:scrollingCache="false"
+    android:smoothScrollbar="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rvQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.digimaster.digicourse.digicyber.Activity.AssessmentActivity">
+
+
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:id="@+id/demoPlayerQuiz"
+            app:resize_mode="fill"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_quiz_adapter"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="-25dp"
+            app:layout_collapseMode="parallax"
+            android:layout_above="@+id/rvQuestion"
+            android:layout_alignStart="@+id/progress_bar1"
+            android:visibility="gone"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/vidDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="2dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@id/vidTit"
+            android:visibility="gone"
+            android:text="Pertanyaan 1"
+            android:fontFamily="@font/poppinslight"/>
+
+        <TextView
+            android:layout_below="@id/demoPlayerQuiz"
+            android:id="@+id/vidTit"
+            android:fontFamily="@font/poppinslight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:text="Pertanyaan 1" />
+
+        <TextView
+            android:id="@+id/a"
+            android:layout_below="@id/vidDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:visibility="invisible" />
+
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/tvQuestions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp" />
+
+        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+            android:id="@+id/progress_bar1"
+            android:layout_width="317dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="57dp"
+            app:rcBackgroundColor="@color/colorPrimaryDark"
+            app:rcMax="30"
+            app:rcProgress="1"
+            app:rcProgressColor="@color/colorPrimary"
+            android:visibility="invisible"
+            app:rcRadius="5dp">
+
+        </com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar>
+
+        <TextView
+            android:id="@+id/tvPertanyaan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@id/progress_bar1"
+            android:visibility="gone"
+            android:text="Pertanyaan 1" />
+
+        <RelativeLayout
+            android:id="@+id/rvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_cardview"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tvPertanyaan"
+            android:layout_margin="9dp"
+            android:elevation="20dp"
+            android:padding="20dp">
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/tvQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rvQuestion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/iv_quiz_adapter"
+            android:layout_marginBottom="45dp"
+            android:elevation="20dp"
+            android:padding="20dp">
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/tvQuestion2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_below="@+id/tvQuestion3"/>
+            <TextView
+                android:id="@+id/tvQuestion3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppinslight"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayTampungKonten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rvQuestion"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <com.keenfin.audioview.AudioView
+                android:id="@+id/avQuiz"
+                android:layout_width="345dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                app:minified="true"
+                app:selectControls="false"
+                app:showTitle="false" />
+
+
+        </LinearLayout>
+
+            <WebView
+                android:layout_below="@+id/vidTit"
+                android:id="@+id/pdfViews"
+                android:visibility="gone"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayTampung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayTampungKonten"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etEssayQuizAdapter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:background="@drawable/rounded_cardview"
+                android:layout_margin="15dp"
+                android:maxLength="140"
+                android:elevation="7dp"
+                android:visibility="gone"
+                android:hint="Input your answer."/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_answer"
+                android:layout_width="312dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignStart="@+id/ll_answer"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:visibility="visible"
+                        android:id="@+id/pil1"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="A"
+                        android:textAllCaps="false"
+                        android:textOff="A"
+                        android:textOn="A"
+                        android:textSize="12sp" />
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/formula_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        app:engine="MathJax"
+                        app:text="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/ll_answer"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:visibility="visible"
+                        android:id="@+id/pil2"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="B"
+                        android:textAllCaps="false"
+                        android:textOff="B"
+                        android:textOn="B"
+                        android:textSize="12sp" />
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/formula_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        app:engine="MathJax"
+                        app:text="2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignStart="@+id/ll_answer"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:visibility="visible"
+                        android:id="@+id/pil3"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="C"
+                        android:textAllCaps="false"
+                        android:textOff="C"
+                        android:textOn="C"
+                        android:textSize="12sp" />
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/formula_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        app:engine="MathJax"
+                        app:text="3" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/ll_answer"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:visibility="visible"
+                        android:id="@+id/pil4"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="D"
+                        android:textAllCaps="false"
+                        android:textOff="D"
+                        android:textOn="D"
+                        android:textSize="12sp" />
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/formula_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        app:engine="MathJax"
+                        app:text="4" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linear_lima"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignStart="@+id/ll_answer"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <ToggleButton
+                        android:visibility="visible"
+                        android:id="@+id/pil5"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="E"
+                        android:textOff="E"
+                        android:textOn="E"
+                        android:textSize="12sp" />
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/formula_five"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        app:engine="MathJax"
+                        app:text="5" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/headerQAwal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/progress_bar1"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="23dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Question 1 of"
+            android:textStyle="bold" />
+
+
+        <com.like.LikeButton
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon_size="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/btnNextQA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button_color"
+                android:elevation="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="NEXT"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="50dp"
+                />
+            <Button
+                android:visibility="gone"
+                android:id="@+id/refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button_color"
+                android:elevation="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Refresh"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="50dp"
+                />
+    </RelativeLayout>
+</LinearLayout>

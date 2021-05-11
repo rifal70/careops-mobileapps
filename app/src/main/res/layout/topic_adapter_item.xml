@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rv_root_mycourse_adapter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@null">
+
+
+    <TextView
+        android:id="@+id/tv_bab_my_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bab"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="0dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/rvBab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_bab_my_course"
+        android:layout_margin="5dp"
+        android:background="@drawable/rounded_cardview"
+        android:elevation="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2.0">
+
+        <ImageView
+            android:id="@+id/ivStatusAction"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/right_arrow" />
+
+        <TextView
+            android:id="@+id/tv_name_action"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_weight="1.6"
+            android:gravity="center_vertical"
+            android:text="Bab"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/toggleButtonDetailLib"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end |center_vertical"
+            android:layout_weight="0.1"
+            android:src="@drawable/workspace" />
+
+    </LinearLayout>
+
+
+    <!--<net.cachapa.expandablelayout.ExpandableLayout-->
+    <!--android:id="@+id/expandable_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_below="@id/tv_bab_my_course"-->
+    <!--app:el_duration="700"-->
+    <!--app:el_expanded="true"-->
+    <!--app:el_parallax="0.5">-->
+
+
+    <!--</net.cachapa.expandablelayout.ExpandableLayout>-->
+</RelativeLayout>

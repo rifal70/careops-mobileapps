@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.battleent:RibbonViews:1.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8689d88f14b74d1199edb3a005359ed5/jetified-RibbonViews-1.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8689d88f14b74d1199edb3a005359ed5/jetified-RibbonViews-1.0.2/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.battleent/RibbonViews/1.0.2/fe7b85e1b0a2228cf1123348878053173edc997f/RibbonViews-1.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.battleent/RibbonViews/1.0.2/330badcf65d9e5e66fc81573895f1733a1b7aa18/RibbonViews-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

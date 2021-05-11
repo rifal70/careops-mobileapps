@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.digimaster.digicourse.digicyber.Activity.CurrDetailActivity">
+
+    <include
+        android:id="@+id/includeDetTem"
+        layout="@layout/app_bar_atasnya_doank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="149dp"
+        >
+
+        <com.nex3z.togglebuttongroup.button.CircularToggle
+            android:id="@+id/choice_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="1"
+            android:text="1" />
+
+        <com.nex3z.togglebuttongroup.button.CircularToggle
+            android:id="@+id/choice_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="2"
+            android:text="2" />
+
+        <com.nex3z.togglebuttongroup.button.CircularToggle
+            android:id="@+id/choice_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="3"
+            android:text="3" />
+
+        <com.nex3z.togglebuttongroup.button.CircularToggle
+            android:id="@+id/choice_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="4"
+            android:text="4" />
+
+        <com.nex3z.togglebuttongroup.button.CircularToggle
+            android:id="@+id/choice_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="5"
+            android:text="5" />
+
+        <com.nex3z.togglebuttongroup.button.CircularToggle
+            android:id="@+id/choice_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="6"
+            android:text="6" />
+
+    </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+
+    <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+        android:id="@+id/group_dummy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="103dp"
+        app:tbgChildSpacing="auto"
+        app:tbgChildSpacingForLastRow="align"
+        app:tbgFlow="true"
+        app:tbgRowSpacing="8dp">
+
+        <!--...-->
+        <com.nex3z.togglebuttongroup.button.LabelToggle
+            android:id="@+id/lt_math"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mathematics" />
+
+        <com.nex3z.togglebuttongroup.button.LabelToggle
+            android:id="@+id/lt_scie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Science" />
+
+        <com.nex3z.togglebuttongroup.button.LabelToggle
+            android:id="@+id/lt_soci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Social Science" />
+
+    </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="GRADES"
+        android:textColor="@color/black_87"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="344dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="SUBJECT"
+        android:textColor="@color/black_87"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_curr_detail"
+        android:layout_width="match_parent"
+        android:layout_height="368dp"
+        android:layout_below="@id/textView27"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

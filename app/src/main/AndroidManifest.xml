@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.digimaster.digicourse.digicyber">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon,android:allowBackup">
+        <activity android:name=".Activity.EventActivity"></activity>
+        <activity android:name=".Activity.NewsActivity" />
+        <activity android:name=".Activity.FaqActivity" />
+        <activity android:name=".Activity.RequestActivity" />
+        <activity android:name=".Activity.IntroActivity" />
+        <activity android:name=".Activity.AchievementActivity" />
+        <activity android:name=".Activity.AchievementCourseActivity"/>
+        <activity android:name=".Activity.TitleCourseHalamanAchievement"/>
+        <activity android:name=".Activity.DetailTopicHalamanAchievement"/>
+        <activity android:name=".Activity.AudioActivity" />
+        <activity android:name=".Activity.MyScoreAdminActivity" />
+        <activity android:name=".Activity.ListMemberGroupAdminActivity" />
+        <activity android:name=".Activity.TaskAssesActivity" />
+        <activity android:name=".Activity.TaskLibraryActivity" />
+        <activity android:name=".Activity.DetailNewsActivity" />
+        <activity android:name=".Activity.HistoryActivity" />
+        <activity android:name=".Activity.DetailTeacherActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.RegisterActivity" />
+        <activity android:name=".Activity.LandingActivity" />
+        <activity android:name=".Activity.OptionSettingActivity" />
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:configChanges="orientation"
+            android:label="@string/featured"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.DetailItemActivity"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".Activity.SplashScreen"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Adapter.SimpleAdapter"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name=".Adapter.SimpleSectionedRecyclerViewAdapter" />
+        <activity
+            android:name=".Activity.DetailCourseActivity"
+            android:theme="@style/FullscreenTheme"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Activity.ForgetPassActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Activity.DetailModuleActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Activity.KonfirmasiActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Activity.DetailTaskActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Activity.DetailLibActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Activity.CourseActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Adapter.ModuleAdapter"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Activity.AssessmentActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Activity.AssessmentHalamanLibraryActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Activity.ScoreActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Activity.ScoreLibraryActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Activity.TabActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Activity.SimpleTabsActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Adapter.FinishedTaskAdapter"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Adapter.MyCertificatesAdapter"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Activity.DetailOnsiteItemActivity"
+            android:theme="@style/FullscreenTheme"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Activity.RegisOnsiteActivity"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name=".Activity.CurrDetailActivity" />
+        <activity
+            android:name=".Adapter.MyCourseAdapter"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Adapter.QuizAdapter"
+            android:label="@string/title_activity_quiz_adapter"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Adapter.TeacherAdapter"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Adapter.IndoAdapter"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Adapter.InterAdapter"
+            tools:ignore="InnerclassSeparator" />
+        <activity android:name=".Activity.MidtransPaymentActivity" />
+        <activity android:name=".Activity.eAssessActivity" />
+        <activity android:name=".Activity.eAssessHalamanLibraryActivity" />
+        <activity android:name=".Activity.WebViewActivity" />
+        <activity android:name=".Activity.MyGroupActivity" />
+        <activity
+            android:name=".Activity.NotificationSettingActivity"
+            android:parentActivityName=".Activity.OptionSettingActivity" />
+        <activity
+            android:name=".Activity.ChangePasswordActivity"
+            android:parentActivityName=".Activity.OptionSettingActivity" />
+        <activity
+            android:name=".Activity.ChangePhoneActivity"
+            android:parentActivityName=".Activity.OptionSettingActivity" />
+
+        <activity android:name=".Activity.DetailLibraryBaru"
+            android:parentActivityName=".Activity.TaskLibraryActivity"/>
+        <activity android:name=".Activity.DetailModulLibraryActivity"
+            android:parentActivityName=".Activity.DetailLibraryBaru"/>
+        <activity android:name=".Activity.ContactusActivity"
+            android:parentActivityName=".Activity.HomeActivity"/>
+        <provider
+            android:name=".util.GenericFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

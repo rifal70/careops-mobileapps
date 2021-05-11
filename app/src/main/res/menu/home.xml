@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_action_action_search"
+        android:orderInCategory="100"
+        android:title="Search...."
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_tiga_titik_hitam"
+        android:icon="@drawable/ic_more_vert_black_24dp"
+        android:orderInCategory="100"
+        android:title="More"
+        app:showAsAction="always"
+        android:visible="false">
+
+        <menu>
+            <group>
+                <item android:title="Contact Us"
+                    android:id="@+id/contactus_option"/>
+                <item android:title="Terms of Service"
+                    android:id="@+id/termsofservice_option"/>
+                <item android:title="Privacy Policy"
+                    android:id="@+id/privacyandpolicy_option"/>
+                <item android:title="Settings"
+                    android:id="@+id/settings_option"/>
+                <item
+                    android:id="@+id/logout"
+                    android:title="@string/logout" />
+
+            </group>
+        </menu>
+    </item>
+
+</menu>

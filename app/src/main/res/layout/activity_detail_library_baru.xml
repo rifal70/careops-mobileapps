@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbardetaillib"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!--        <android.support.design.widget.CollapsingToolbarLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="200dp"-->
+        <!--            android:fitsSystemWindows="true"-->
+        <!--            app:contentScrim="@color/grey_f1"-->
+        <!--            app:expandedTitleTextAppearance="@android:color/transparent"-->
+        <!--            app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+        <!--            app:title="Judul"-->
+        <!--            >-->
+        <!--            -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/modtb"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:title=""
+                app:titleTextColor="@color/white" />
+
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rv_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/course_bg">
+
+            <TextView
+                android:id="@+id/tv_titlecoursetitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Course 1"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_writercoursetitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_titlecoursetitle"
+                android:text="Created by"
+                android:textSize="10sp"
+                android:textAlignment="center" />
+
+
+
+        </RelativeLayout>
+
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            app:tabSelectedTextColor="#727272"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+
+            android:id="@+id/tl_detaillib"
+            app:tabTextColor="@color/colorBiru"
+            app:tabIndicatorColor="@color/colorBiru"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vp_detaillib"/>
+
+</LinearLayout>
+
+

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.digimaster.digicourse.digicyber.Activity.DetailItemActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <!--        <android.support.design.widget.CollapsingToolbarLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="200dp"-->
+        <!--            android:fitsSystemWindows="true"-->
+        <!--            app:contentScrim="@color/grey_f1"-->
+        <!--            app:expandedTitleTextAppearance="@android:color/transparent"-->
+        <!--            app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+        <!--            app:title="Judul"-->
+        <!--            >-->
+        <!--            -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/detail_toolbar_kosong"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:title=""
+                app:titleTextColor="@color/white" />
+
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rvHeaderDetailCourse"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/course_bg">
+
+            <TextView
+                android:id="@+id/tvJudulDetailCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Course 1"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:shadowColor="#7F000000"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAuthorDetailCourse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvJudulDetailCourse"
+                android:text="Created by"
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                android:shadowColor="#7F000000"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="2"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tvCompletedModules"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvAuthorDetailCourse"
+                android:layout_marginTop="60dp"
+                android:text="Completed Modules"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:shadowColor="#7F000000"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="2"
+                />
+
+            <TextView
+                android:id="@+id/tvAction2Go"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvCompletedModules"
+                android:layout_marginTop="5dp"
+                android:text="Completed Modules"
+                android:textAlignment="center"
+                android:visibility="invisible"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:shadowColor="#7F000000"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="2"/>
+
+        </RelativeLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:background="#FFF"
+            android:visibility="visible"
+            app:tabGravity="fill"
+            app:tabTextColor="#B63532" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/content_simple_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_anchor="@+id/include2"
+        android:layout_gravity="bottom"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

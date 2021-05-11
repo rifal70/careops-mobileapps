@@ -1,0 +1,278 @@
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:theme="@style/AppTheme.NoActionBar"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgprofile" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/myprofile"
+                app:civ_border_color="#FFF"
+                app:civ_border_width="2dp" />
+
+            <LinearLayout
+                android:id="@+id/libut"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/relprofile"
+                android:layout_centerHorizontal="true">
+                <Button
+                    android:id="@+id/btnDiscard"
+                    android:layout_width="100dp"
+
+                    android:layout_height="30dp"
+
+
+                    android:layout_marginLeft="35dp"
+
+                    android:background="@drawable/rounded_button_color"
+
+                    android:text="Discard"
+                    android:textColor="#FFF"
+                    android:textSize="8dp" />
+
+                <Button
+                    android:id="@+id/btnSavechange"
+                    android:layout_width="100dp"
+
+                    android:layout_height="30dp"
+
+                    android:layout_marginLeft="35dp"
+
+                    android:background="@drawable/rounded_button_color"
+
+                    android:text="Save Changes"
+                    android:textColor="#FFF"
+
+                    android:textSize="8dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="250sp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/libut"
+                android:text="Phone number and password can be changed in settings.Click the icon in the upper righr corner."
+                android:textSize="12sp"
+                android:textColor="@color/colorBiru"/>
+            <RelativeLayout
+                android:id="@+id/relprofile"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/profile_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_button"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnEdit_profile"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+
+                    android:background="@drawable/edit"
+                    android:elevation="1dp"
+                    android:paddingEnd="1dp" />
+
+                <EditText
+
+                    android:id="@+id/etFirstname_profile"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:enabled="false"
+                    android:hint="first name"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/etLastname_profile"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etFirstname_profile"
+                    android:layout_centerHorizontal="true"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="last name"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/etNickname_profile"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etLastname_profile"
+
+                    android:layout_centerHorizontal="true"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="nick name"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/etEmail_profile"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etNickname_profile"
+
+                    android:layout_centerHorizontal="true"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="e-mail address"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/etPhone_profile"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etEmail_profile"
+
+                    android:layout_centerHorizontal="true"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="phone number"
+                    android:inputType="textPersonName" />
+
+
+
+                <EditText
+                    android:id="@+id/etInstitution_profile"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etPhone_profile"
+                    android:maxLines="2"
+                    android:lines="2"
+                    android:layout_centerHorizontal="true"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="institution"
+                    android:inputType="textMultiLine"
+                    />
+
+                <EditText
+                    android:id="@+id/position_profile"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etInstitution_profile"
+
+                    android:layout_centerHorizontal="true"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:hint="position"
+                    android:inputType="textPersonName" />
+
+
+                <!--                <EditText-->
+                <!--                    android:id="@+id/etEmail_profile"-->
+                <!--                    android:layout_width="190dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_below="@+id/etFullName_profile"-->
+                <!--                    android:layout_centerHorizontal="true"-->
+                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:drawableLeft="@drawable/ic_mail_outline_black_18dp"-->
+                <!--                    android:ems="10"-->
+                <!--                    android:enabled="false"-->
+                <!--                    android:hint="   email"-->
+                <!--                    android:inputType="textPersonName" />-->
+
+                <!--                <EditText-->
+                <!--                    android:id="@+id/etBday_profile"-->
+                <!--                    android:layout_width="190dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_below="@+id/etEmail_profile"-->
+                <!--                    android:layout_centerHorizontal="true"-->
+                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:drawableLeft="@drawable/ic_date_range_black_18dp"-->
+                <!--                    android:ems="10"-->
+                <!--                    android:enabled="false"-->
+                <!--                    android:hint="   birthdate"-->
+                <!--                    android:inputType="textPersonName" />-->
+
+                <!--                <EditText-->
+                <!--                    android:id="@+id/etPhone_profile"-->
+                <!--                    android:layout_width="190dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_below="@+id/etBday_profile"-->
+                <!--                    android:layout_centerHorizontal="true"-->
+                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:drawableLeft="@drawable/ic_call_black_18dp"-->
+                <!--                    android:ems="10"-->
+                <!--                    android:enabled="false"-->
+                <!--                    android:hint="   phone"-->
+                <!--                    android:inputType="textPersonName" />-->
+
+                <!--                <EditText-->
+                <!--                    android:id="@+id/etAddress_profile"-->
+                <!--                    android:layout_width="190dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_below="@+id/etPhone_profile"-->
+                <!--                    android:layout_centerHorizontal="true"-->
+                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:drawableLeft="@drawable/ic_home_black_18dp"-->
+                <!--                    android:ems="10"-->
+                <!--                    android:enabled="false"-->
+                <!--                    android:hint="   address"-->
+                <!--                    android:inputType="textPersonName" />-->
+
+                <!--                <belka.us.androidtoggleswitch.widgets.ToggleSwitch-->
+                <!--                    android:id="@+id/toogleGender_profile"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_below="@id/etAddress_profile"-->
+                <!--                    android:layout_centerHorizontal="true"-->
+                <!--                    android:layout_marginTop="20dp"-->
+                <!--                    android:clickable="false"-->
+                <!--                    android:textSize="14dp"-->
+                <!--                    android:visibility="gone"-->
+                <!--                    app:activeBgColor="@android:color/holo_blue_dark"-->
+                <!--                    app:activeTextColor="@android:color/white"-->
+                <!--                    app:inactiveBgColor="@android:color/white"-->
+                <!--                    app:inactiveTextColor="@android:color/black"-->
+                <!--                    app:separatorColor="@color/gray_very_light"-->
+                <!--                    app:textToggleLeft="MALE"-->
+                <!--                    app:textToggleRight="FEMALE"-->
+                <!--                    app:toggleWidth="104dp" />-->
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

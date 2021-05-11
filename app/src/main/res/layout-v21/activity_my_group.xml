@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rvFindGuru"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/detail_toolbar_kosong"
+        android:layout_width="match_parent"
+        app:layout_collapseMode="pin"
+        app:title="Careopss"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="?android:attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextColor="@color/white" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif_load_fragment_find_teacher"
+            android:layout_width="72dp"
+            android:layout_height="68dp"
+            android:layout_below="@+id/textView21"
+            android:layout_centerHorizontal="true"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            android:src="@drawable/loading"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTeacher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/detail_toolbar_kosong"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rela_my_ppl"
+            android:layout_width="244dp"
+            android:layout_height="144dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/kosong_ppl" />
+        </RelativeLayout>
+
+    </RelativeLayout>
